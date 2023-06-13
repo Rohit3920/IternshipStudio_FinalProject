@@ -2,3 +2,57 @@
     padding: 0;
     margin: 0;
 }
+
+#header_carousel img{
+    width: 100%;
+    height: 50%;
+}
+
+.shadow{
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 1px #888888;
+  }
+  .single_product{
+    position: relative;
+  }
+  .single_product span.new{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+.section_title{
+    text-decoration: underline;
+}
+.shop-by-category card{
+    border-radius: 20px;
+}
+
+.our_feature{
+    background-image: linear-gradient(rgb(0, 251, 255) 0.5%, rgb(37, 37, 222) 99%);
+}
+
+@media screen  and (width < 900px){
+    .our_feature{
+background-color: rgb(37, 37, 222);
+    }
+}
+
+.our_feature i.img{
+    font-size: 50px;
+    padding: 10px;
+}
+
+.footer_links li{
+    list-style: none ;
+}
+
+.footer_links li a{
+    color: black;
+}
+
+.backtop{
+    position: fixed;
+    top: 90%;
+ left: 94%;
+}
