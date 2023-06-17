@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>The Protein Shop</title>
+  <title>E-commerce</title>
 
   <!-- style.css -->
   <link rel="stylesheet" href="Assets/CSS/style.css">
@@ -15,7 +15,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!-- Font Awesome cdn link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
@@ -35,22 +35,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="Product.html">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Category</a>
+              <a class="nav-link" href="category.html">Category</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="About.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="Contact.html">Contact Us</a>
             </li>
-
           </ul>
+          <div class="cart_page p-1 mx-2 border border-primary rounded">
+            <a href="Cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <label class="cart_label" for="cart_page">Cart</label>
+            </a>
+          </div>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -92,7 +96,7 @@
       <div class="row">
         <div class="col-md-4 col-12">
           <div class="card bg-dark text-white m-2">
-            <a href="#">
+            <a href="category.html">
               <img class="card-img img img-fluid" src="Assets/MultiMedia/Img/category1.jpg"
                 alt="category product are missing">
             </a>
@@ -100,7 +104,7 @@
         </div>
         <div class="col-md-4 col-12 mt-samll-5 mb-samll-5">
           <div class="card bg-dark text-white m-2">
-            <a href="#">
+            <a href="category.html">
               <img class="card-img img img-fluid" src="Assets/MultiMedia/Img/category2.jpg"
                 alt="category product are missing">
             </a>
@@ -108,7 +112,7 @@
         </div>
         <div class="col-md-4 col-12 ">
           <div class="card bg-dark text-white m-2">
-            <a href="#">
+            <a href="category.html">
               <img class="card-img img img-fluid" src="Assets/MultiMedia/Img/category3.jpg"
                 alt="category product are missing">
             </a>
@@ -120,15 +124,15 @@
   <section class="products py-5 bg-light" id="products">
     <div class="container">
       <div class="section_title text-center mb-5">
-        <h1 class="text-capitalize">Latest Priducts</h1>
+        <h1 class="text-capitalize">Latest Products</h1>
       </div>
 
       <div class="row mb-5">
-
         <div class="col-md-4 col-12">
           <div class="single_product shadow text-center p-1">
             <div class="product-img">
-              <a href="#"><img src="Assets/MultiMedia/Img/product-1.jfif" alt="product img are missing"></a>
+              <a href="product-view.html"><img src="Assets/MultiMedia/Img/product-1.jfif"
+                  alt="product img are missing"></a>
               <div class="new_product">
                 <span class="new badge py-2 px-3 badge-pill badge-danger">
                   New
@@ -143,7 +147,7 @@
                   <i class="far fa-star low-star"></i>
                 </div>
 
-                <h4><a href="#">Gym Protein Supplement</a></h4>
+                <h4><a href="product-view.html">Gym Protein Supplement</a></h4>
                 <div class="price">
                   <b><i class="fa-sharp fa-solid fa-indian-rupee-sign mr-1"></i><span class="">600</span></b>
                 </div>
@@ -155,7 +159,8 @@
         <div class="col-md-4 col-12">
           <div class="single_product shadow text-center p-1">
             <div class="product-img">
-              <a href="#"><img src="Assets/MultiMedia/Img/product-2.jfif" alt="product img are missing"></a>
+              <a href="product-view.html"><img src="Assets/MultiMedia/Img/product-2.jfif"
+                  alt="product img are missing"></a>
               <div class="new_product">
                 <span class="new badge py-2 px-3 badge-pill badge-danger">
                   New
@@ -170,7 +175,7 @@
                   <i class="far fa-star low-star"></i>
                 </div>
 
-                <h4><a href="#">Gym Body Powder</a></h4>
+                <h4><a href="product-view.html">Gym Body Powder</a></h4>
                 <div class="price">
                   <b><i class="fa-sharp fa-solid fa-indian-rupee-sign mr-1"></i><span class="">750</span></b>
                 </div>
@@ -181,12 +186,13 @@
         <div class="col-md-4 col-12">
           <div class="single_product shadow text-center p-1">
             <div class="product-img">
-              <a href="#"><img src="Assets/MultiMedia/Img/product-3.jfif" alt="product img are missing"></a>
-              <div class="new_product">
+              <a href="product-view.html"><img src="Assets/MultiMedia/Img/product-3.jfif"
+                  alt="product img are missing"></a>
+              <!-- <div class="new_product">
                 <span class="new badge py-2 px-3 badge-pill badge-danger">
                   New
                 </span>
-              </div>
+              </div> -->
               <div class="product-caption my-3">
                 <div class="product-ratting">
                   <i class="far fa-star"></i>
@@ -196,7 +202,7 @@
                   <i class="far fa-star low-star"></i>
                 </div>
 
-                <h4><a href="#">Gym Protein-premmium Suppl</a></h4>
+                <h4><a href="product-view.html">Gym Protein-premmium Suppl</a></h4>
                 <div class="price">
                   <b><i class="fa-sharp fa-solid fa-indian-rupee-sign mr-1"></i><span class="">1050</span></b>
                 </div>
@@ -226,7 +232,7 @@
               <li class="text-left ml-5">A valid free shipping coupon</li>
               <li class="text-left ml-5">A minimum order amount</li>
               <li class="text-left ml-5">A minimum order amount OR a coupon</li>
-              <li class="text-left ml-5">A minimum order amount AND a coupon</li>
+              <li class="text-left ml-5">A minimum order amount AND a Discount</li>
             </ul>
           </div>
         </div>
@@ -259,7 +265,7 @@
     </div>
   </section>
 
-  <section class="footer_section mt-4">
+  <section class="footer_section mt-4" id="footer_section">
     <footer>
       <div class="container-fluid">
         <div class="row">
@@ -270,7 +276,8 @@
               </a>
             </div>
             <div class="description">
-              <p>Search for Gym & fitness equipment at Smart Now. Check out results for Gym & fitness equipment. Search Now. Quality Results. Internet Information. Types: Home & Garden, Finance, Vehicles.</p>
+              <p>Search for Gym & fitness equipment at Smart Now. Check out results for Gym & fitness equipment. Search
+                Now. Quality Results. Internet Information. Types: Home & Garden, Finance, Vehicles.</p>
             </div>
           </div>
 
@@ -280,10 +287,10 @@
             </div>
             <div class="footer_links">
               <ul>
-                <li><a href="#">About</a></li>
+                <li><a href="About.html">About</a></li>
                 <li><a href="javascript:;">Offer And Discounts</a></li>
                 <li><a href="javascript:;">Get Coupons</a></li>
-                <li><a href="#">Contacts Us</a></li>
+                <li><a href="Contact.html">Contacts Us</a></li>
               </ul>
             </div>
           </div>
@@ -293,10 +300,10 @@
             </div>
             <div class="footer_links">
               <ul>
-                <li><a href="#">Nutrition Grow</a></li>
-                <li><a href="#">muscle accessories</a></li>
-                <li><a href="#">mens accessories</a></li>
-                <li><a href="#">Protien Chocolates</a></li>
+                <li><a href="javascript:;">Nutrition Grow</a></li>
+                <li><a href="javascript:;">muscle accessories</a></li>
+                <li><a href="javascript:;">mens accessories</a></li>
+                <li><a href="javascript:;">Protien Chocolates</a></li>
               </ul>
             </div>
           </div>
@@ -315,7 +322,7 @@
           </div>
         </div>
       </div>
-      <div class="border-top">
+      <div class="border-top" id="down">
         <h6 class="text-center mt-3">
           copyright @2023 All right reserved
         </h6>
@@ -323,12 +330,18 @@
     </footer>
   </section>
 
-  <div class="backtop">
-    <a href="#top" id="button" class="btn btn-lg btn-outline-secondary" role="button">
-      <i class="fa fa-solid fa-arrow-up-from-bracket"></i>
-    </a>
+  <div class="up-down-arrow border">
+    <div class="backtopIndex">
+      <a href="#top" id="button" class="btn btn-outline-secondary" role="button">
+        <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="backbottom">
+      <a href="#down" id="button" class="btn btn-outline-secondary" role="button">
+        <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+      </a>
+    </div>
   </div>
-
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
