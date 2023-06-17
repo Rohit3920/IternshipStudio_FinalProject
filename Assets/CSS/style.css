@@ -1,58 +1,146 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+
 }
 
-#header_carousel img{
+#header_carousel img {
     width: 100%;
     height: 50%;
 }
 
-.shadow{
-    border-radius: 20px;
-    box-shadow: 1px 1px 2px 1px #888888;
-  }
-  .single_product{
+.cart_label{
+    visibility: hidden;
+    display: none;
+    animation-delay: 1s;
+}
+
+div.cart_page:hover ~ label,
+div.cart_page i:hover ~ label{
+    visibility: visible;
+    display: inline;
+}
+
+.shadow {
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px 1px #888888fc;
+}
+
+.single_product {
     position: relative;
-  }
-  .single_product span.new{
+}
+.bg-lightgray{
+    background-color: #8888884b;
+
+}
+.footer_section{
+    border-top: 4px solid lightcoral;
+    border-radius: 6px;
+}
+
+.footer_section img{
+    margin: 5px 0 10px 0;
+}
+
+.single_product span.new {
     position: absolute;
     top: 10px;
     left: 10px;
-  }
+}
 
-.section_title{
+.section_title {
     text-decoration: underline;
 }
-.shop-by-category card{
+
+.shop-by-category card {
     border-radius: 20px;
 }
 
-.our_feature{
-    background-image: linear-gradient(rgb(0, 251, 255) 0.5%, rgb(37, 37, 222) 99%);
+.our_feature {
+    background-image: linear-gradient(rgb(251, 255, 0) 0.5%, rgb(255, 98, 0) 99%);
 }
 
-@media screen  and (width < 900px){
-    .our_feature{
-background-color: rgb(37, 37, 222);
+@media only screen and (width < 900) {
+    .our_feature {
+        background-color: rgb(37, 37, 222);
+    }
+
+    .up-down-arrow {
+        position: fixed;
+        top: 85%;
+        left: 90%;
     }
 }
 
-.our_feature i.img{
+.our_feature i.img {
     font-size: 50px;
     padding: 10px;
 }
 
-.footer_links li{
-    list-style: none ;
+.footer_links li {
+    list-style: none;
 }
 
-.footer_links li a{
+.footer_links li a {
     color: black;
 }
 
-.backtop{
+.up-down-arrow {
+    position: fixed;
+    top: 85%;
+    left: 97%;
+}
+
+.backtop {
     position: fixed;
     top: 90%;
- left: 94%;
+    left: 91%;
+}
+
+.backtop, .backbottom {
+    border: none;
+    padding: 0px;
+}
+
+.bg_cart_1{
+    background-image: linear-gradient(to top right,lightblue, lightpink);
+}
+.Order_summary ul li, .Order_confirmation ul li{
+    background-color: transparent;
+}
+
+.checkout .Order_confirmation{
+    background-image: linear-gradient(lightpink, lightcoral);
+}
+
+.Order_confirmation ul li:hover{
+    background-color: rgba(211, 211, 211, 0.313);
+}
+.billing_details{
+    background-image: linear-gradient(to top right,lightblue, lightpink);
+
+}
+.order_confirmation #spin{
+    size: 10px;
+}
+
+.contact i{
+    font-size: 50px;
+    padding: 10px;
+}
+.hover-shadow:hover{
+    box-shadow: 1px 1px 4px 1px #1dbbffd3;
+}
+
+.auther-profile img{
+    border-radius: 50%;
+}
+
+.auther-profile img:hover {
+    transition-property: transform;
+    transition-delay: 0.2s;
+    transition-duration: 2s;
+    transform: rotateY(360deg);
+    transition-timing-function: linear;
 }
