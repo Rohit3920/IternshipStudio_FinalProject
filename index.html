@@ -52,13 +52,16 @@
           </ul>
           <div class="cart_page p-1 mx-2 border border-primary rounded">
             <a href="Cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <label class="cart_label" for="cart_page">Cart</label>
+              <label class="cart_label" for="cart_page">Cart</label>
             </a>
           </div>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          <div action="Search.html" onsubmit="return false" id="search_form" class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" id="search-input" placeholder="Search"
+              aria-label="Search">
+            <a href="Search.html"> <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn"
+                type="submit">Search</button>
+            </a>
+          </div>
         </div>
       </nav>
     </div>
@@ -342,6 +345,8 @@
       </a>
     </div>
   </div>
+
+  <script src="Assets/Js/script.js"></script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

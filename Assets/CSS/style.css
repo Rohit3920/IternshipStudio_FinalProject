@@ -60,19 +60,10 @@ div.cart_page i:hover ~ label{
 .our_feature {
     background-image: linear-gradient(rgb(251, 255, 0) 0.5%, rgb(255, 98, 0) 99%);
 }
-
-@media only screen and (width < 900) {
-    .our_feature {
-        background-color: rgb(37, 37, 222);
-    }
-
-    .up-down-arrow {
-        position: fixed;
-        top: 85%;
-        left: 90%;
-    }
+    
+.cart_page{
+    max-width: 100px;
 }
-
 .our_feature i.img {
     font-size: 50px;
     padding: 10px;
@@ -111,7 +102,7 @@ div.cart_page i:hover ~ label{
 }
 
 .checkout .Order_confirmation{
-    background-image: linear-gradient(lightpink, lightcoral);
+    background-image: linear-gradient(rgb(248, 255, 182), rgb(128, 240, 227));
 }
 
 .Order_confirmation ul li:hover{
