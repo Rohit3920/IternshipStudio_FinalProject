@@ -65,15 +65,14 @@
     </div>
   </section>
 
-  <!-- write a main content here -->
   <section class="cart_section">
     <div class="container my-5 py-3">
       <div class="section_title text-center">
         <h1 class="text-capitalize">Cart</h1>
       </div>
 
-      <div class="row bg_cart_1">
-        <div class="col-md-8 border-right">
+      <div class="row bg_cart_1 rounded">
+        <div class="col-12 col-lg-8 border-bottom border-danger">
           <h3 class="text-capitalize m-3">cart (<span>2</span> Items)</h3>
           <div class="row cart_item mb-3">
             <div class="col-md-7">
@@ -85,7 +84,7 @@
                   <p class="mb-3 text-muted text-uppercase small">Type -
                     Powder</p>
                   <p class="mb-2 text-muted text-uppercase small">Use:
-                    Protein Shake</p>
+                    Protein Powder</p>
                   <p class="mb-3 text-muted text-uppercase small">Size:
                     <strong>5kg</strong>
                   </p>
@@ -93,9 +92,11 @@
               </div>
             </div>
             <div class="col-md-5">
-              <h5  class="btn btn-outline-primary" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</h5>
+              <h5 class="btn btn-outline-primary"
+                onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</h5>
               <input class="py-1 text-center quantity" type="number" min="0" max="10" value="1">
-              <h5 class="btn btn-outline-primary" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</h5>
+              <h5 class="btn btn-outline-primary"
+                onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</h5>
               <small>
                 (Note, 1 piece)
               </small>
@@ -113,36 +114,38 @@
           <div class="row cart_item mb-3">
             <div class="col-md-7">
               <div class="row">
-                <img src="Assets/MultiMedia/Img/product-2.jfif" alt="img does not match" class="col-5">
+                <img src="Assets/MultiMedia/Img/product-5.jfif" alt="img does not match" class="col-5">
 
                 <div class="col-7">
                   <h4><a href="product-view.html">Gym Body Powder</a></h4>
                   <p class="mb-3 text-muted text-uppercase small">Type -
-                    Powder</p>
+                    shake</p>
                   <p class="mb-2 text-muted text-uppercase small">Use:
-                    muscle Gainning</p>
+                    muscle power shake</p>
                   <p class="mb-3 text-muted text-uppercase small">Size:
-                    <strong>5kg</strong>
+                    <strong>2kg</strong>
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-md-5">
-              <h5 class="btn btn-outline-primary" onclick=" this.parentNode.querySelector('input[type=number]').stepDown()">-</h5>
-              <input class="py-1 text-center quantity" type="number" min="0" max="10" value="1">
-              <h5 class="btn btn-outline-primary" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</h5>
+              <h5 class="btn btn-outline-primary"
+                onclick=" this.parentNode.querySelector('input[type=number]').stepDown()">-</h5>
+              <input class="py-1 text-center quantity" type="number" min="0" max="10" value="2">
+              <h5 class="btn btn-outline-primary"
+                onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</h5>
               <div class="price mr-5 pr-5 mt-3">
                 <div class="text-right">Product Price : <i class="fa-sharp fa-solid fa-indian-rupee-sign mr-1"></i><span
-                    class="">750</span></div>
+                    class="">600</span></div>
                 <small class="text-right ml-5 pl-5">- dicount : <i
-                    class="fa-sharp fa-solid fa-indian-rupee-sign mr-1"></i><span class="">50</span></small>
+                    class="fa-sharp fa-solid fa-indian-rupee-sign mr-1"></i><span class="">0</span></small>
                 <div class="text-right"> Total : <i class="fa-sharp fa-solid fa-indian-rupee-sign mr-1"></i><span
-                    class="">700</span></div>
+                    class="">600</span></div>
               </div>
             </div>
           </div>
         </div>
-        <div class=" Order_summary col-md-4 rounded pb-3">
+        <div class=" Order_summary col-12 col-lg-4 border-left rounded pb-3">
           <h3 class="text-capitalize m-3">Order Summary</h3>
 
           <ul class="list-group list-group-flush">
@@ -156,7 +159,7 @@
             align-items-center border-0 px-0 pb-2">
               <span>muscle Gainner</span>
               <span>x2</span>
-              <span>₹700.00</span>
+              <span>₹1200.00</span>
             </li>
             <li class="list-group-item d-flex justify-content-between
             align-items-center border-top px-0 mb-3">
@@ -166,7 +169,7 @@
                   <p class="mb-0">(including VAT)</p>
                 </strong>
               </div>
-              <span><strong>₹2400.00</strong></span>
+              <span><strong>₹2200.00</strong></span>
             </li>
           </ul>
           <a href="checkout.html" class="btn btn-primary btn-block"> Checkout List & Continue</a>
@@ -253,8 +256,6 @@
     </div>
   </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
