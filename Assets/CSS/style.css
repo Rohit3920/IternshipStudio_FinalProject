@@ -62,7 +62,7 @@ div.cart_page i:hover ~ label{
 }
     
 .cart_page{
-    max-width: 100px;
+    max-width: fit-content;
 }
 .our_feature i.img {
     font-size: 50px;
